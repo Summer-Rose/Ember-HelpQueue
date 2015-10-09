@@ -7,8 +7,13 @@
             {{#link-to 'student'}}<button class="btn btn-lg btn-default submitBtn">Continue</button>{{/link-to}}
         </div>
         <div class="col-sm-6 col-md-6 col-lg-6 center">
-            <h3>Sign in as teacher</h3>
-            {{login-form login="login"}}
+            {{#if session.isAuthenticated}}
+                <p>already logged in</p>
+            {{else}}
+                <h3>Teacher Sign-in</h3>
+                {{login-form login="login"}}
+                <p>Not registered? Add a new teacher here.</p>
+            {{/if}}
         </div>
     </div>
   </div>
