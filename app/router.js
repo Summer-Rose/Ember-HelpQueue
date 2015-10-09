@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('success', {path: '/success/:ticket_id'});
   this.route('course', {path: '/course/:course_id'});
   this.route('ticket', {path: '/ticket/:ticket_id'});
+  this.route('student', {});
+  this.route('teacher', {});
 });
 
 export default Router;

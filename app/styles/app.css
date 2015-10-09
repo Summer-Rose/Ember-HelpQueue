@@ -27,6 +27,17 @@ body {
   color: #C2F0A2;
 }
 
+.login-area {
+    margin-top: 40px;
+}
+
+.left {
+    border-right: 2px solid #FF6138;
+}
+.center {
+    text-align: center;
+}
+
 form {
   padding-bottom: -30px;
 }

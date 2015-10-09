@@ -1,6 +1,15 @@
 <div class="jumbotron">
   <div class="container">
-    <h3>Need Help? Submit a ticket:</h3>
-    {{add-ticket saveTicketToCourse="saveTicketToCourse" courses=model}}
+    <h2 class="center">Welcome to the Epicodus Help Queue</h2>
+    <div class="row login-area">
+        <div class="col-sm-6 col-md-6 col-lg-6 left center">
+            <h3>Continue as Student</h3>
+            {{#link-to 'student'}}<button class="btn btn-lg btn-default submitBtn">Continue</button>{{/link-to}}
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 center">
+            <h3>Sign in as teacher</h3>
+            {{login-form login="login"}}
+        </div>
+    </div>
   </div>
 </div>
